@@ -19,7 +19,9 @@ const UserTable: React.FC = () => {
 
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
-  const [sortKey, setSortKey] = useState<"name" | "email" | "username"| "id">("name");
+  const [sortKey, setSortKey] = useState<"name" | "email" | "username" | "id">(
+    "name"
+  );
 
   const debouncedPage = useDebounce(currentPage, 300);
   const debouncedSearch = useDebounce(searchTerm, 300);
@@ -36,9 +38,9 @@ const UserTable: React.FC = () => {
 
   // Sort
   const sortedUsers = [...filteredUsers].sort((a, b) => {
-     if (sortKey === "id") {
-    return a.id - b.id; 
-  }
+    if (sortKey === "id") {
+      return a.id - b.id;
+    }
     const fieldA = a[sortKey].toLowerCase();
     const fieldB = b[sortKey].toLowerCase();
     return fieldA.localeCompare(fieldB);
@@ -58,7 +60,7 @@ const UserTable: React.FC = () => {
 
         <SortControl sortKey={sortKey} onSortKeyChange={setSortKey} />
       </div>
-      
+
       {/* Error message */}
       {error && (
         <div className="bg-red-100 text-red-700 dark:bg-red-800 dark:text-red-300 p-4 rounded-md flex justify-between items-center">
@@ -73,8 +75,8 @@ const UserTable: React.FC = () => {
       )}
 
       {/* Tablef */}
-      <div className="w-full overflow-x-auto ">
-        <table className="min-w-[900px] w-full border border-gray-300 dark:border-gray-700 dark:text-white/40 rounded-md">
+      <div className="w-full overflow-x-auto">
+        <table className="md:min-w-[900px] w-full border border-gray-300 dark:border-gray-700 dark:text-white/40 rounded-md">
           <thead className="bg-gray-200 dark:bg-gray-800">
             <tr>
               <ThCell>ID</ThCell>
@@ -120,9 +122,10 @@ const UserTable: React.FC = () => {
           </tbody>
         </table>
       </div>
+     
       {/* Pagination */}
-{!loading && !error && sortedUsers.length > 0 && (       
-   <Pagination
+      {!loading && !error && sortedUsers.length > 0 && (
+        <Pagination
           currentPage={currentPage}
           totalPages={totalPages}
           onPageChange={setCurrentPage}

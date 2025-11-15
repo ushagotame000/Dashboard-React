@@ -52,20 +52,24 @@ const Home: React.FC = () => {
   return (
     <div className="p-6 space-y-8">
       {/*  Banner */}
-<div className="bg-gradient-to-r from-blue-500 via-indigo-500 to-pink-400 text-white p-8 rounded-xl shadow-md flex flex-col md:flex-row md:items-center md:justify-between">
+      <div className="bg-gradient-to-r from-blue-500 via-indigo-500 to-pink-400 text-white p-8 rounded-xl shadow-md flex flex-col md:flex-row md:items-center md:justify-between">
         <div>
-          <h1 className="text-3xl font-bold mb-2">
-            Welcome to Dashboard !
-          </h1>
+          <h1 className="text-3xl font-bold mb-2">Welcome to Dashboard !</h1>
           <p className="text-blue-100 dark:text-blue-200">
             Dashboard template built using TypeScript, React, Tailwind CSS,
             Redux Toolkit, and public user API.
           </p>
         </div>
         <div className="mt-4 md:mt-0">
-          <button className="px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100 transition">
-            View Live Demo
-          </button>
+          <a
+            href="https://dashboard-usha.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-6 py-2 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100 transition">
+              View Live Demo
+            </button>
+          </a>
         </div>
       </div>
 
