@@ -7,21 +7,19 @@ export default function UserDropdown() {
   const toggleDropdown = () => setIsOpen(!isOpen);
   const closeDropdown = () => setIsOpen(false);
 
-  // Static user info
   const userName = "Usha Gotame";
 
   return (
     <div className="relative">
-      {/* User Button */}
       <button
         onClick={toggleDropdown}
-        className="flex items-center text-gray-700"
+        className="flex items-center dark:text-gray-600"
       >
-        <span className="mr-3 overflow-hidden rounded-full h-11 w-11 flex items-center justify-center border">
+        <span className="mr-3 overflow-hidden rounded-full h-11 w-11 flex items-center justify-center border border-gray-200 hover:text-dark-900 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white">
           <FaUser className="text-xl" />
         </span>
 
-        <span className="mr-1 font-medium">{userName}</span>
+        <span className="mr-1 font-medium text-sm text-gray-700 dark:text-white/50">{userName}</span>
 
         <svg
           className={`stroke-gray-500  transition-transform duration-200 ${
@@ -45,13 +43,13 @@ export default function UserDropdown() {
 
       {/* Dropdown */}
       {isOpen && (
-        <div className="absolute right-0 mt-4 w-48 rounded-xl border bg-white shadow-lg dark:border-gray-800 p-2">
+        <div className="absolute right-0 mt-4 w-48 rounded-xl shadow-lg p-2 bg-white border border-gray-200 hover:text-dark-900 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800">
           <button
             onClick={() => {
               closeDropdown();
               alert("Signed out!");
             }}
-            className="flex w-full items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 "
+            className="flex w-full items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 "
           >
             <FaSignOutAlt />
             Sign Out

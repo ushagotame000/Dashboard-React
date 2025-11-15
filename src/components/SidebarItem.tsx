@@ -32,32 +32,31 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ items }) => {
             <Link
               to={nav.path}
               onClick={() => handleClick(nav.path)}
-              className={`
-                flex items-center w-full px-3 py-2 rounded-lg transition-colors duration-200
+              className={`flex items-center w-full px-3 py-1.5 rounded-lg transition-colors duration-200
                 ${
                   isActive
-                    ? "bg-blue-200 text-blue-600"
-                    : "hover:bg-gray-100 text-gray-700 dark:text-gray-300"
+                    ? "bg-blue-200 text-blue-600 dark:bg-blue-600/20 dark:text-blue-700"
+                    : "text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-400/20"
                 }
               `}
             >
               <span
-                className={`mr-3 flex items-center justify-center w-10 h-10 rounded-full ${
-                  isActive ? "text-blue-600" : "text-gray-900"
-                }`}
+                className={`flex items-center justify-center w-10 h-10 rounded-full transition-colors duration-200
+                  ${isActive ? "text-blue-600" : "text-gray-900 dark:text-white/40"}
+                `}
               >
                 {nav.icon}
               </span>
 
-              <span
-                className={`flex-1 transition-colors duration-200 ${
-                  isActive
-                    ? "text-blue-600"
-                    : "text-gray-900 "
-                }`}
-              >
-                {nav.name}
-              </span>
+              {showText && (
+                <span
+                  className={`flex-1 ml-3 transition-colors duration-200
+                    ${isActive ? "text-blue-600" : "text-gray-900 dark:text-white/40 hover:text-gray-700"}
+                  `}
+                >
+                  {nav.name}
+                </span>
+              )}
             </Link>
           </li>
         );
