@@ -1,7 +1,10 @@
+import UserTable from "@components/UserTable"
 
 const Data = () => {
   return (
-    <div>Data</div>
+    <div>
+      <UserTable/>
+    </div>
   )
 }
 
