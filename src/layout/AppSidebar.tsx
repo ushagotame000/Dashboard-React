@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaHome, FaRegChartBar } from "react-icons/fa"; 
-import { useSidebar } from "../context/SidebarContext";
+import { useSidebar } from "@context/SidebarContext";
 import SidebarItem from "@components/SidebarItem";
 
 type NavItem = {

@@ -31,7 +31,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ value, onChange }) => {
         placeholder="Search users, email, username, company..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className=" h-11 w-full rounded-lg border border-gray-200 bg-transparent py-2.5 pl-12 pr-14 text-sm text-gray-800 placeholder:text-gray-400 focus:outline-hidden focus:ring-2 focus:ring-blue-600/10 dark:border-gray-700 dark:bg-gray-800  dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-blue-500 xl:w-[430px]"
+        className=" h-11 w-full rounded-lg border border-gray-300 bg-transparent py-2.5 pl-12 pr-14 text-sm text-gray-800 placeholder:text-gray-400 focus:outline-hidden focus:ring-2 focus:ring-blue-600/10 dark:border-gray-700 dark:bg-gray-800  dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-blue-500 xl:w-[430px]"
       />
 
       {value && (

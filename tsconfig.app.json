@@ -5,12 +5,15 @@
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "types": ["vite/client"],
+    "types": ["cypress", "node", "vitest/globals", "vite/client"],
     "skipLibCheck": true,
      "baseUrl": ".", 
    "paths": {
       "@components/*": ["src/components/*"],
       "@features/*": ["src/features/*"],
+      "@context/*": ["src/context/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@layout/*": ["src/layout/*"],
       "@types/*": ["src/types/*"],
       "@assets/*": ["src/assets/*"],
       "@pages/*": ["src/pages/*"],
@@ -33,5 +36,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-"include": ["src/**/*"]
+"include": ["cypress/**/*.ts","src/**/*"]
 }
