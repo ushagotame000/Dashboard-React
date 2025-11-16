@@ -14,7 +14,6 @@ const initialState: UsersState = {
   error: null,
 };
 
-//  thunk fro fetch users
 export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
   const users = await fetchUsersFromAPI();
   return users;

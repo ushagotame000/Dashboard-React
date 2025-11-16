@@ -11,6 +11,9 @@
    "paths": {
       "@components/*": ["src/components/*"],
       "@features/*": ["src/features/*"],
+      "@context/*": ["src/context/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@layout/*": ["src/layout/*"],
       "@types/*": ["src/types/*"],
       "@assets/*": ["src/assets/*"],
       "@pages/*": ["src/pages/*"],

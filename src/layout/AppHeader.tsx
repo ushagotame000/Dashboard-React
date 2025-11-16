@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 
 import { Link } from "react-router";
-import { useSidebar } from "../context/SidebarContext";
-import UserDropdown from "@components/UserDropdown";
-import { ThemeToggleButton } from "@components/ThemeToggleButton";
+import { useSidebar } from "@context/SidebarContext";
+import UserDropdown from "@components/ui/UserDropdown";
+import { ThemeToggleButton } from "@components/ui/ThemeToggleButton";
 
 const AppHeader: React.FC = () => {
   const [isApplicationMenuOpen, setApplicationMenuOpen] = useState(false);

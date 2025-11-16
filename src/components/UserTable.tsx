@@ -3,11 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import Pagination from "./Pagination";
 import SearchBar from "./SearchBar";
 import SortControl from "./SortControl";
-import { useDebounce } from "../hooks/useDebounce";
+import { useDebounce } from "@hooks/useDebounce";
 import type { AppDispatch, RootState } from "@app/store";
 import { fetchUsers } from "@features/users/usersSlice";
-import { TdCell, ThCell } from "./TableCell";
-import { SkeletonRow } from "./SkeletonRow";
+import { TdCell, ThCell } from "./ui/TableCell";
+import { SkeletonRow } from "./ui/SkeletonRow";
 
 const USERS_PER_PAGE = 6;
 
