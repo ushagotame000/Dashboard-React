@@ -1,16 +1,16 @@
-React Admin Dashboard
+### React Admin Dashboard
 
 Live Demo: https://dashboard-usha.vercel.app/
 
 ### Project Overview
 
-A responsive React dashboard built with Vite, TypeScript, Tailwind CSS, Redux Toolkit, featuring:
+A responsive React dashboard built with Vite and TypeScript, featuring:
 
--Protected authentication with sign-in and logout
+- Authentication with protected routes (sign-in & logout)
 
--Dark/Light mode support
+- Dark/Light mode support
 
--User table with search, sort, filter, pagination, and skeleton loaders
+- User table with search, sort, filter, pagination, and skeleton loaders
 
 - Global error handling using Error Boundaries
 
@@ -20,21 +20,23 @@ React, TypeScript, Vite, Tailwind CSS, Redux Toolkit, RTK Query, React Router, J
 
 ### Features
 
-- Protected routes
-
 - Debounced search & sorting in user table
 
 - Pagination & skeleton loaders
 
--Redux state management
+- Unit Testing
+
+- Dark/Light mode toggle
+
+- Global state management with Redux Toolkit
 
 - Unit tests (Jest)
 
 ## Installation & Run
-git clone https://github.com/ushagotame000/dashboard-react.git
-cd dashboard-react
-npm install
-npm run dev
+- git clone https://github.com/ushagotame000/dashboard-react.git
+- cd dashboard-react
+- npm install
+- npm run dev
 
 Open http://localhost:5173 in your browser
 
@@ -42,7 +44,7 @@ Open http://localhost:5173 in your browser
 
 Sign in with your username (min 2 characters) 
 or 
- username: admin admin
+- username: admin admin
 
 ## Testing
 
