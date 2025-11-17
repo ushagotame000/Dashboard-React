@@ -18,6 +18,9 @@ A responsive React dashboard built with Vite and TypeScript, featuring:
 
 React, TypeScript, Vite, Tailwind CSS, Redux Toolkit, RTK Query, React Router, Jest, Cypress
 
+### Used Api
+- Users API: https://jsonplaceholder.typicode.com/users
+
 ### Features
 
 - Debounced search & sorting in user table
