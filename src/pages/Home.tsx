@@ -41,13 +41,18 @@ const Home: React.FC = () => {
     },
   ];
 
-  const highlights = [
-    "Responsive dashboard with dark mode support.",
-    "Table with sorting, filtering, debounced search & pagination.",
-    "Skeleton loaders for smooth data fetching.",
-    "Tech stack showcase with TypeScript, React, Tailwind CSS, Redux Toolkit.",
-    "Integration with public user API using Redux Toolkit + RTK Query.",
-  ];
+const highlights = [
+  "Protected auth implementation.",
+  "Responsive dashboard with dark mode support.",
+  "Table with sorting, filtering, debounced search & pagination.",
+  "Skeleton loaders for smooth data fetching.",
+  "Tech stack showcase with TypeScript, React, Tailwind CSS, Redux Toolkit.",
+  "Integration with public user API using Redux Toolkit + RTK Query.",
+  "Global error boundary handling for catching UI-level crashes safely.",
+  "Unit testing with Jest & React Testing Library for component reliability.",
+];
+
+
 
   return (
     <div className="p-6 space-y-8">
